@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout as AntdLayout, Menu } from 'antd';
 import { Link } from 'react-router-dom';
-import { HomeOutlined, InfoCircleOutlined, ProductOutlined, UnorderedListOutlined } from '@ant-design/icons';
+import { HomeOutlined, InfoCircleOutlined, VideoCameraOutlined, CalendarOutlined } from '@ant-design/icons';
 
 const { Header: AntdHeader } = AntdLayout;
 
@@ -31,17 +31,12 @@ export default function Header() {
                 <Menu.Item key="2">
                     <VideoCameraOutlined />
                     <span>Films</span>
-                    <Link to="/products" />
+                    <Link to="/films" />
                 </Menu.Item>
                 <Menu.Item key="3">
                     <CalendarOutlined />
                     <span>Sessions</span>
-                    <Link to="/orders" />
-                </Menu.Item>
-                <Menu.Item key="4">
-                    <InfoCircleOutlined />
-                    <span>About</span>
-                    <Link to="/about" />
+                    <Link to="/sessions" />
                 </Menu.Item>
             </Menu>
         </AntdHeader>

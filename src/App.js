@@ -5,16 +5,17 @@ import Home from './components/Home';
 import Films from './components/Films';
 import NoPage from './components/NoPage';
 import Sessions from './components/Sessions';
+import Welcome from './components/Welcome'
 
 function App(){
   return(
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Welcome />}>
-          <Route index element={<p>Home</p>} />
-          <Route path="films" element={<p>Films</p>} />
-          <Route path="sessions" element={<p>Sessions</p>} />         
-          <Route path="*" element={<p>Page Not Found!</p>} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home/>} />
+          <Route path="films" element={<Films/>} />
+          <Route path="sessions" element={<Sessions/>} />         
+          <Route path="*" element={<p>uygvius</p>} />
         </Route>
       </Routes>
     </BrowserRouter>

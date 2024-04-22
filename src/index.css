@@ -21,3 +21,10 @@ code {
 .Layout .main {
   flex-grow: 1;
 }
+
+.vupadalka{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10
+}

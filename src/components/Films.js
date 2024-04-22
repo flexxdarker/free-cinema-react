@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button, message, Popconfirm, Rate, Space, Table, Tag } from 'antd';
 import { DeleteOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 const makeFirstUpper = (text) => {
     return text[0].toUpperCase() + text.slice(1);
@@ -95,7 +96,14 @@ export default function Films() {
     }, []);
 
     return (
-        <Table columns={columns} dataSource={films} pagination={{ pageSize: 5 }} rowKey="id" />
+        <>
+            <Space>
+                <Button style={{ marginBottom: 10 }} type="primary">
+                    <Link to="create">Create New Film</Link>
+                </Button>
+            </Space>
+            <Table columns={columns} dataSource={films} pagination={{ pageSize: 5 }} rowKey="id" />
+        </>
     );
 }
 

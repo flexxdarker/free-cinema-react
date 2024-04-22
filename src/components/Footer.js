@@ -10,8 +10,8 @@ export default function Footer() {
                 textAlign: 'center',
             }}
         >
-            Ant Design ©{new Date().getFullYear()} Created by Ant UED
-            Creator flexxdarker for PV221 ♡
+            <div>Ant Design ©{new Date().getFullYear()} Created by Ant UED</div>
+            <div>Creator flexxdarker for PV221 ♡</div>
         </AntdFooter>
     )
 }

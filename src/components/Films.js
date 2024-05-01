@@ -12,6 +12,7 @@ const confirm = (id) => {
     message.success('Deleting product...');
 };
 const mapGanres = (list) =>{
+   
   return list;
 }
 
@@ -33,15 +34,9 @@ const columns = [
         key: 'name'
     },
     {
-        title: 'Price',
-        dataIndex: 'price',
-        key: 'price',
-        render: (text) => <span>{text}$</span>
-    },
-    {
         title: 'Category',
-        dataIndex: 'ganre',
-        key: 'ganre',
+        dataIndex: 'genre',
+        key: 'genre',
         render: (text) => <span>{mapGanres(text)}</span>
     },
     {
